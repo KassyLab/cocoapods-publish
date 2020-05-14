@@ -141,6 +141,7 @@ module Pod
             validator.swift_version = @swift_version
             validator.skip_import_validation = @skip_import_validation
             validator.skip_tests = @skip_tests
+            validator.quick = true
             begin
               validator.validate
             rescue => e
