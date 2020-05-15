@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'cocoapods_publish.rb'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cocoapods-dependencies"
+  spec.name          = "cocoapods-publish"
   spec.version       = Pod::Publish::VERSION
   spec.authors       = ["Damien DANGLARD"]
   spec.email         = ["damien.danglard@kassylab.com"]
