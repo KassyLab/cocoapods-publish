@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Build + Publish
+    name: Publish to RubyGems
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
       with:
         version: 2.6.x
 
-    - name: Publish to RubyGems
+    - name: Build + Publish
       run: |
         mkdir -p $HOME/.gem
         touch $HOME/.gem/credentials
