@@ -1,0 +1,22 @@
+name: Ruby Gem
+
+on:
+  push:
+    branches-ignore: [ stable ]
+  pull_request:
+    branches-ignore: [ stable ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby 2.6
+      uses: actions/setup-ruby@v1
+      with:
+        version: 2.6.x
+
+    - name: Build
+      run: gem build *.gemspec
