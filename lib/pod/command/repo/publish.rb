@@ -5,7 +5,7 @@ require 'active_support/core_ext/string/inflections'
 module Pod
   class Command
     class Repo < Command
-      class Push < Repo
+      class Publish < Repo
         self.summary = 'Push new specifications to a spec-repo'
 
         self.description = <<-DESC
